@@ -1,3 +1,7 @@
+# Personal notification
+
+I recommend to clone this repo and create an own image for having an actual nginx-image
+
 # Nginx AutoIndex
 
 [![](https://images.microbadger.com/badges/version/jorgeandrada/nginx-autoindex.svg)](https://microbadger.com/images/jorgeandrada/nginx-autoindex "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/jorgeandrada/nginx-autoindex.svg)](https://microbadger.com/images/jorgeandrada/nginx-autoindex "Get your own image badge on microbadger.com")
@@ -23,3 +27,4 @@ Serves all files in `/usr/share/nginx/html`
 ```
 docker run --name=web -p 8080:80  -h web -v path_web_site:/usr/share/nginx/html -d jorgeandrada/nginx-autoindex
 ```
+
