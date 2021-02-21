@@ -1,6 +1,13 @@
 # Personal notification
 
-I recommend to clone this repo and create an own image for having an actual nginx-image
+I recommend to clone this repo and create an own image for having an actual nginx-image  
+
+Create an own image
+
+```
+cd <directory with Dockerfile>
+docker build -t autoindex .
+```
 
 # Nginx AutoIndex
 
@@ -25,6 +32,6 @@ Serves all files in `/usr/share/nginx/html`
     }
 
 ```
-docker run --name=web -p 8080:80  -h web -v path_web_site:/usr/share/nginx/html -d jorgeandrada/nginx-autoindex
+docker run --name=web -p 80:80  -h web -v path_web_site:/usr/share/nginx/html -d jorgeandrada/nginx-autoindex
 ```
 
