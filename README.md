@@ -1,4 +1,4 @@
-# Personal notification
+# Personal notifications
 
 I recommend to clone this repo and create an own image for having an actual nginx-image  
 
