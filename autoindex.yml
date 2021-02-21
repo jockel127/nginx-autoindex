@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  autoindex:
+    image: 'autoindex:latest'
+    container_name: autoindex
+    volumes:
+      - 'autoindex_documentroot:/usr/share/nginx/html'
+    restart: always
+    ports:
+      - "80:80"
+        
+volumes:
+  autoindex_documentroot:
+    driver: local
